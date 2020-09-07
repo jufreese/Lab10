@@ -13,27 +13,17 @@ int main() {
 	string s1;
 	char ch;
 
-	
-	
-	cin.get(ch);
 	while (ch != '#') {
-		if (isupper(ch)) {
-			upper++;
-			cin.get(ch);
-		}
-		if (islower(ch)) {
-			lower++;
-			cout << lower << endl;
-			cin.get(ch);
-		}
-		if (isdigit(ch)) {
-			digit++;
-			cin.get(ch);
-		}
+		if (isupper(ch)) upper++;
+		if (islower(ch)) lower++;
+		if (isdigit(ch)) digit++;
 		
+		cin.get(ch);
 	}
+	
 	cout << lower << endl;
 	cout << upper << endl;
 	cout << digit;
+	
 	return 0;
 }
